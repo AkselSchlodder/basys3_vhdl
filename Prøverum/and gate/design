@@ -1,1 +1,42 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 10/16/2026 07:30:16 PM
+-- Design Name: 
+-- Module Name: proeverum - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity proeverum is
+    Port ( 
+    A : in std_logic;
+    B : in std_logic;
+    C : out std_logic);
+    
+end proeverum;
+
+architecture Behavioral of proeverum is
+
+begin
+
+C <= A and B;
+
+end Behavioral;
 
