@@ -20,31 +20,31 @@ port map (
 );
 
 
---opførsel
+--opfï¿½rsel
 
 process begin
-    signal_A <= '000';
+    signal_A <= "000";
     wait for 10 ns;
 
-    signal_A <= '001';
+    signal_A <= "001";
     wait for 10 ns;
 
-    signal_A <= '010';
+    signal_A <= "010";
     wait for 10 ns;
 
-    signal_A <= '011';
+    signal_A <= "011";
     wait for 10 ns;
 
-    signal_A <= '100';
+    signal_A <= "100";
     wait for 10 ns;
 
-    signal_A <= '101';
+    signal_A <= "101";
     wait for 10 ns;
 
-    signal_A <= '110';
+    signal_A <= "110";
     wait for 10 ns;
 
-    signal_A <= '111';
+    signal_A <= "111";
     wait for 10 ns;
 
     wait;
