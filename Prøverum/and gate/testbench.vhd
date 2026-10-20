@@ -36,35 +36,33 @@ end Proeverum_ts;
 
 architecture Behavioral of Proeverum_ts is
 -- vi definerer vores test-signaler
-signal signal_A : std_logic;
-signal signal_B : std_logic;
+signal signal_AB : std_logic_vector(1 downto 0);
 signal signal_C : std_logic;
 
 begin
 
 DUT: entity work.proeverum
     port map (
-    A => signal_A,
-    B => signal_B,
+    AB => signal_AB,
     C => signal_C
     );
     
 process
 begin
-    signal_A <= '0';
-    signal_B <= '0';
+    signal_AB(0) <= '0';
+    signal_A(1=) <= '0';
     wait for 10 ns;
     
-    signal_A <= '1';
-    signal_B <= '0';
+    signal_AB(0) <= '1';
+    signal_A(1=) <= '0';
     wait for 10 ns;
     
-    signal_A <= '0';
-    signal_B <= '1';
+    signal_AB(0) <= '0';
+    signal_A(1=) <= '1';
     wait for 10 ns;
     
-    signal_A <= '1';
-    signal_B <= '1';
+    signal_AB(0) <= '1';
+    signal_A(1=) <= '1';
     wait for 10 ns;
     
     wait;
