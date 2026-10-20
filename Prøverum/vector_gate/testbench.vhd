@@ -8,8 +8,8 @@ end vector_gate_ts;
 --definer
 
 architecture Behavioral of vector_gate_ts is
-signal : signal_A std_logic_vector(2 downto 0);
-signal : signal_B std_logic_vector(2 downto 0);
+signal signal_A : std_logic_vector(2 downto 0);
+signal signal_B : std_logic_vector(2 downto 0);
 begin
 
 --port map
