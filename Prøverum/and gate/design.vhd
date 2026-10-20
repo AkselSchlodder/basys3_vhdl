@@ -26,8 +26,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity proeverum is
     Port ( 
-    A : in std_logic;
-    B : in std_logic;
+    AB : in std_logic_vector(1 downto 0);
     C : out std_logic);
     
 end proeverum;
@@ -36,7 +35,7 @@ architecture Behavioral of proeverum is
 
 begin
 
-C <= A and B;
+C <= AB(0) and AB(1);
 
 end Behavioral;
 
