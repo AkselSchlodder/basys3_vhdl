@@ -50,19 +50,19 @@ DUT: entity work.proeverum
 process
 begin
     signal_AB(0) <= '0';
-    signal_A(1=) <= '0';
+    signal_AB(1) <= '0';
     wait for 10 ns;
     
     signal_AB(0) <= '1';
-    signal_A(1=) <= '0';
+    signal_AB(1) <= '0';
     wait for 10 ns;
     
     signal_AB(0) <= '0';
-    signal_A(1=) <= '1';
+    signal_AB(1) <= '1';
     wait for 10 ns;
     
     signal_AB(0) <= '1';
-    signal_A(1=) <= '1';
+    signal_AB(1) <= '1';
     wait for 10 ns;
     
     wait;
